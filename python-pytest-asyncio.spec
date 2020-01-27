@@ -18,7 +18,7 @@ Requires:       python3dist(async-generator) >= 1.3
 Requires:       python3dist(async-generator) >= 1.3
 Requires:       python3dist(coverage)
 Requires:       python3dist(hypothesis) >= 3.64
-Requires:       python3dist(pytest) >= 3.0.6
+#Requires:       python3dist(pytest) >= 3.0.6
 Requires:       python3dist(setuptools)
 
 %description
@@ -38,5 +38,5 @@ rm -rf %{pypi_name}.egg-info
 %files
 %license LICENSE
 %doc README.rst
-%{python3_sitelib}/pytest_asyncio
-%{python3_sitelib}/pytest_asyncio-%{version}-py?.?.egg-info
+%{python_sitelib}/pytest_asyncio
+%{python_sitelib}/pytest_asyncio-%{version}-py?.?.egg-info
