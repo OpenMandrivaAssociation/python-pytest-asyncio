@@ -2,7 +2,7 @@
 %global pypi_name pytest-asyncio
 
 Name:           python-%{pypi_name}
-Version:        0.10.0
+Version:        0.14.0
 Release:        1
 Summary:        Pytest support for asyncio
 Group:          Development/Python
@@ -18,7 +18,7 @@ Requires:       python3dist(async-generator) >= 1.3
 Requires:       python3dist(async-generator) >= 1.3
 Requires:       python3dist(coverage)
 Requires:       python3dist(hypothesis) >= 3.64
-#Requires:       python3dist(pytest) >= 3.0.6
+Requires:       python3dist(pytest) >= 3.0.6
 Requires:       python3dist(setuptools)
 
 %description
