@@ -9,6 +9,7 @@ Group:          Development/Python
 License:        Apache 2.0
 URL:            https://github.com/pytest-dev/pytest-asyncio
 Source0:        https://files.pythonhosted.org/packages/source/p/%{pypi_name}/%{pypi_name}-%{version}.tar.gz
+Patch0:         python-pytest-asyncio-allow-pytest-6.1.2.patch
 BuildArch:      noarch
  
 BuildRequires:  python-devel
@@ -25,7 +26,7 @@ Requires:       python3dist(setuptools)
 pytest-asyncio: pytest support for asyncio :alt: Supported Python versions
 
 %prep
-%autosetup -n %{pypi_name}-%{version}
+%autosetup -p1 -n %{pypi_name}-%{version}
 # Remove bundled egg-info
 rm -rf %{pypi_name}.egg-info
 
