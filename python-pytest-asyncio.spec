@@ -9,7 +9,7 @@ Group:          Development/Python
 License:        Apache 2.0
 URL:            https://github.com/pytest-dev/pytest-asyncio
 Source0:        https://files.pythonhosted.org/packages/source/p/%{pypi_name}/%{pypi_name}-%{version}.tar.gz
-Patch0:         python-pytest-asyncio-allow-pytest-6.1.2.patch
+#Patch0:         python-pytest-asyncio-allow-pytest-6.1.2.patch
 BuildArch:      noarch
  
 BuildRequires:  python-devel
