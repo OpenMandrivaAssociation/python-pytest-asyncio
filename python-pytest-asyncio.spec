@@ -19,7 +19,7 @@ Requires:       python3dist(async-generator) >= 1.3
 Requires:       python3dist(async-generator) >= 1.3
 Requires:       python3dist(coverage)
 Requires:       python3dist(hypothesis) >= 3.64
-Requires:       python3dist(pytest) >= 3.0.6
+#Requires:       python3dist(pytest) >= 3.0.6
 Requires:       python3dist(setuptools)
 
 %description
