@@ -41,3 +41,4 @@ rm -rf %{pypi_name}.egg-info
 %doc README.rst
 %{python_sitelib}/pytest_asyncio
 #{python_sitelib}/pytest_asyncio-%{version}-py?.?.egg-info
+%{python_sitelib}/pytest_asyncio-*.*-py*.egg-info/*
