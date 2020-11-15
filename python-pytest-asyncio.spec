@@ -3,7 +3,7 @@
 
 Name:           python-%{pypi_name}
 Version:        0.14.0
-Release:        1
+Release:        2
 Summary:        Pytest support for asyncio
 Group:          Development/Python
 License:        Apache 2.0
@@ -39,6 +39,7 @@ rm -rf %{pypi_name}.egg-info
 %files
 %license LICENSE
 %doc README.rst
-%{python_sitelib}/pytest_asyncio
+%{python_sitelib}/pytest_asyncio/
 #{python_sitelib}/pytest_asyncio-%{version}-py?.?.egg-info
-%{python_sitelib}/pytest_asyncio-*.*-py*.egg-info/*
+#{python_sitelib}/pytest_asyncio-*.*-py*.egg-info/*
+%{python_sitelib}/%{pypi_name}-%{version}-py?.?.egg-info
