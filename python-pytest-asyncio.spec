@@ -3,7 +3,7 @@
 
 Name:           python-%{pypi_name}
 Version:        0.14.0
-Release:        2
+Release:        3
 Summary:        Pytest support for asyncio
 Group:          Development/Python
 License:        Apache 2.0
