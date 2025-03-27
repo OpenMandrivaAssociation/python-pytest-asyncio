@@ -12,13 +12,13 @@ BuildArch:      noarch
  
 BuildRequires:  python-devel
 BuildRequires:  python%{pyver}dist(setuptools)
+BuildRequires:  python%{pyver}dist(pluggy)
 %{?python_provide:%python_provide python-%{pypi_name}}
 Requires:       python%{pyver}dist(async-generator) >= 1.3
 Requires:       python%{pyver}dist(async-generator) >= 1.3
 Requires:       python%{pyver}dist(coverage)
 Requires:       python%{pyver}dist(hypothesis) >= 3.64
 Requires:       python%{pyver}dist(pytest)
-Requires:       python%{pyver}dist(pluggy)
 Requires:       python%{pyver}dist(setuptools)
 
 %description
