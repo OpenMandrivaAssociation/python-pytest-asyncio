@@ -2,7 +2,7 @@
 
 Name:           python-pytest-asyncio
 Version:        0.26.0
-Release:        1
+Release:        2
 Summary:        Pytest support for asyncio
 Group:          Development/Python
 License:        Apache 2.0
