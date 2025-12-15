@@ -1,8 +1,8 @@
 %global pypi_name pytest_asyncio
 
 Name:           python-pytest-asyncio
-Version:        0.26.0
-Release:        2
+Version:        1.3.0
+Release:        1
 Summary:        Pytest support for asyncio
 Group:          Development/Python
 License:        Apache 2.0
@@ -10,7 +10,7 @@ URL:            https://github.com/pytest-dev/pytest-asyncio
 Source0:        https://files.pythonhosted.org/packages/source/p/%{pypi_name}/%{pypi_name}-%{version}.tar.gz
 BuildArch:      noarch
  
-BuildRequires:  python-devel
+BuildSystem:	python
 BuildRequires:  python%{pyver}dist(setuptools)
 BuildRequires:  python%{pyver}dist(pytest)
 BuildRequires:  python%{pyver}dist(pluggy)
@@ -25,19 +25,11 @@ Requires:       python%{pyver}dist(setuptools)
 %description
 pytest-asyncio: pytest support for asyncio :alt: Supported Python versions
 
-%prep
-%autosetup -p1 -n %{pypi_name}-%{version}
-
+%prep -a
 cat >>setup.cfg <<EOF
 [options]
 packages = pytest_asyncio
 EOF
-
-%build
-%py_build
-
-%install
-%py_install
 
 %files
 %license LICENSE
