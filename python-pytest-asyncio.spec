@@ -1,7 +1,7 @@
 %global pypi_name pytest_asyncio
 
 Name:           python-pytest-asyncio
-Version:        1.3.0
+Version:        1.4.0
 Release:        1
 Summary:        Pytest support for asyncio
 Group:          Development/Python
