@@ -2,7 +2,7 @@
 
 Name:           python-pytest-asyncio
 Version:        1.4.0
-Release:        1
+Release:        2
 Summary:        Pytest support for asyncio
 Group:          Development/Python
 License:        Apache 2.0
@@ -16,12 +16,7 @@ BuildRequires:  python%{pyver}dist(setuptools-scm)
 BuildRequires:  python%{pyver}dist(pytest)
 BuildRequires:  python%{pyver}dist(pluggy)
 BuildRequires:	git-core
-Requires:       python%{pyver}dist(async-generator) >= 1.3
-Requires:       python%{pyver}dist(async-generator) >= 1.3
-Requires:       python%{pyver}dist(coverage)
-Requires:       python%{pyver}dist(hypothesis) >= 3.64
 Requires:       python%{pyver}dist(pytest)
-Requires:       python%{pyver}dist(setuptools)
 
 
 %description
